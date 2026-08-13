@@ -18,6 +18,8 @@ body {
 
 .menu-container {
     background-color: oklch(68.5% 0.169 237.323);
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container {
@@ -57,4 +59,66 @@ body {
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    color: ivory;
+    fill: currentColor;
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    color: ivory;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.menu-icons {
+    color: ivory;
+    fill: currentColor;
+    height: 35px;
+    width: auto;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.menu-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: ivory;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+li a {
+    margin-left: 15px;
 }
