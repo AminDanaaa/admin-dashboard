@@ -87,6 +87,7 @@ body {
 .menu-option:hover a,
 .menu-option:hover .menu-icons {
     color: black;
+    cursor: pointer;
 }
 
 a,
