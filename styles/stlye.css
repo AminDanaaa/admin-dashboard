@@ -107,6 +107,11 @@ li a {
     width: auto;
 }
 
+.app-icons:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
 .top-bar {
     display: flex;
     align-items: center;
@@ -135,6 +140,11 @@ li a {
     width: 3rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.profile-photo-mini:hover {
+    border: 2px dashed black;
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -261,6 +271,18 @@ li a {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
+}
+
+.shaky-icon:hover {
+    animation: vibrate 0.12s ease-in-out infinite alternate;
+}
+
+@keyframes vibrate {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(1px, -1px); }
+  50%  { transform: translate(-1px, 1px); }
+  75%  { transform: translate(1px, 1px); }
+  100% { transform: translate(0, 0); }
 }
 
 .feed-container {
