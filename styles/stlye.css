@@ -226,16 +226,14 @@ li a {
 .content-container {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    gap: 35px;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 38px;
-    grid-auto-rows: max-content;
     gap: 30px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .projects-header {
@@ -249,11 +247,13 @@ li a {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
     padding: 16px 28px;
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    flex: 1;
 }
 
 .project-card::before {
@@ -270,12 +270,17 @@ li a {
 
 .project-card p {
     text-align: justify;
+    color: oklch(44.6% 0.043 257.281);
 }
 
 .card-icons {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
+}
+
+.card {
+    display: flex;
 }
 
 .shaky-icon:hover {
@@ -291,5 +296,33 @@ li a {
 }
 
 .feed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
 
+.feed-announcements-box,
+.feed-trending-box {
+    background-color: white;
+    min-height: 150px;
+    border-radius: 15px;
+    max-width: 350px;
+    padding-inline: 20px;
+    padding-block: 5px;
+}
+
+.announcement + .announcement {
+    border-top: 1px solid #dfe3eb;
+}
+
+.announcement p{
+    font-size: 0.8rem;
+    color: oklch(44.6% 0.043 257.281);
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.announcement h4 {
+    margin-bottom: 0px;
 }
