@@ -1,0 +1,56 @@
+html,
+body {
+    font-family: Roboto, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: minmax(230px, 1fr) 4fr;
+    height: 100%;
+}
+
+.menu-container {
+    background-color: oklch(68.5% 0.169 237.323);
+}
+
+.main-container {
+    background-color: #e2e7f1;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+.top-bar-container {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.top-bar {
+    border: 1px solid black;
+}
+
+.user-bar {
+    border: 1px solid red;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.projects-container {
+    border: 1px solid green;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.feed-container {
+    border: 1px solid purple;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
