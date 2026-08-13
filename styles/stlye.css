@@ -84,6 +84,11 @@ body {
     margin-bottom: 20px;
 }
 
+.menu-option:hover a,
+.menu-option:hover .menu-icons {
+    color: black;
+}
+
 a,
 a:link,
 a:visited,
