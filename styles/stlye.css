@@ -34,10 +34,6 @@ body {
     grid-template-rows: 2fr 3fr;
 }
 
-.top-bar {
-    border: 1px solid black;
-}
-
 .user-bar {
     border: 1px solid red;
 }
@@ -121,4 +117,51 @@ a:focus {
 
 li a {
     margin-left: 15px;
+}
+
+.app-icons {
+    color: black;
+    fill: currentColor;
+    height: 35px;
+    width: auto;
+}
+
+.top-bar {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-input {
+    background-color: #e2e7f1;
+    border: none;
+    outline: none;
+    padding-inline: 16px;
+    border-radius: 30px;
+    height: 35px;
+    width: clamp(245px, 32vw, 420px);
+    margin-left: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.profile-photo-mini {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.account-news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 15px;
+    min-width: clamp(250px, 10vw, 450px);
 }
