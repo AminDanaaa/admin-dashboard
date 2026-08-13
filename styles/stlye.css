@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.no-select {
+    user-select: none;
+}
+
 .app-container {
     display: grid;
     grid-template-columns: minmax(230px, 1fr) 4fr;
